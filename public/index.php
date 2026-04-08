@@ -1,5 +1,4 @@
 <?php
-
 use Illuminate\Foundation\Application;
 use Illuminate\Http\Request;
 
@@ -14,7 +13,7 @@ if (file_exists($maintenance = __DIR__.'/../storage/framework/maintenance.php'))
 require __DIR__.'/../vendor/autoload.php';
 
 // Bootstrap Laravel and handle the request...
-/** @var Application $app */
+// / ** @var Application $app * /
 $app = require_once __DIR__.'/../bootstrap/app.php';
-
+echo "<h1> hola</h1> <hr>INDEX.PHP<hr>";
 $app->handleRequest(Request::capture());
